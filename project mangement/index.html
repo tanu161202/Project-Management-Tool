@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Project Management Tool</h1>
+    <nav>
+      <ul>
+        <li><a href="#" id="dashboard-link">Dashboard</a></li>
+        <li><a href="#" id="create-project-link">Create Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Dashboard Section -->
+    <section id="project-list-section" class="section">
+      <h2>Your Projects</h2>
+        <p>Take a look at some of my works.</p>
+        <p><a href="C:\Users\tanu1\OneDrive\Desktop\complete project\amazon clone\amazon clone\index.html" target="_main">Amazon clone</a>  </p>
+        <p><a href="C:\Users\tanu1\OneDrive\Desktop\complete project\animated_loginpage\index.html" target ="_main">Animated Loginpage</a>  </p>
+      <div id="projects-container">
+        <!-- Projects will be populated here -->
+      </div>
+    </section>
+
+    <!-- Create Project Section -->
+    <section id="create-project-section" class="section hidden">
+      <h2>Create New Project</h2>
+      <form id="create-project-form">
+        <label for="project-name">Project Name:</label>
+        <input type="text" id="project-name" name="project-name" required>
+
+        <label for="project-desc">Project Description:</label>
+        <textarea id="project-desc" name="project-desc" required></textarea>
+
+        <button type="submit">Create Project</button>
+      </form>
+    </section>
+
+    <!-- Project Detail Section -->
+    <section id="project-detail-section" class="section hidden">
+      <h2 id="project-detail-title"></h2>
+      <div id="task-list">
+        <!-- Task list will be added here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Project Management Tool</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
